@@ -2,6 +2,9 @@
 title: '[译]使用Three.js制作有粘稠感的图像悬停效果'
 date: 2019-11-02 22:40:02
 tags:
+- glsl
+- webGL
+- Graphic
 ---
 
 # [译]使用Three.js制作有粘稠感的图像悬停效果
