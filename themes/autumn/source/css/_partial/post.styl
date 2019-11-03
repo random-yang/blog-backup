@@ -1,8 +1,6 @@
-font-family = "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-
 .post
   position: relative
-  border-bottom: 1px dashed #ddd
+  border-bottom: 1px dashed color_2
   margin: 0 0 4.5em
   padding: 0 0 3em
   .post-cat
@@ -11,36 +9,36 @@ font-family = "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",
     &:first-of-type::after
       content: "\00B7"
       margin: 0 .75em
-      color: #f78769
+      color: color_1
     &:last-of-type::after 
       content: ''
     a
-      font: 700 13px Lato-Bold
-      color: #f78769
+      font: 700 13px
+      color: color_1
       text-decoration: none
       transition: .3s
       text-transform: upperCase
       letter-spacing: 1px
       &:hover
-        color: #777
+        color: color_3
 
   .post-title
     margin: 0 0 .5em
     font: 3em font-family 
-    color: #222
+    color: color_4
     font-weight: 700
     a
       transition: .5s cubic-bezier(.71,0,0,.99)
       text-decoration: none
-      box-shadow: inset 0 -0.3em 0 #f78769
+      box-shadow: inset 0 -0.3em 0 color_1
       &:hover
-        box-shadow: inset 0 -0.8em 0 #f78769
+        box-shadow: inset 0 -0.8em 0 color_1
 
 
   .post-date
     padding: 0
     list-style: none
-    color: #bbb
+    color: color_3
     font: 14px/1.6 font-family
     li 
       display: inline-block
@@ -55,7 +53,7 @@ font-family = "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",
 
   .post-content
     position: relative
-    color: #333
+    color: color_4
     font-size: 1rem
     line-height: 1.6
     margin-bottom: 1.5em
@@ -65,7 +63,7 @@ font-family = "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",
     blockquote
       margin-inline-start: 0
       margin-inline-end: 0
-      border-left: 2px #777 solid
+      border-left: 2px color_3 solid
       padding-left: 2em;
     img
       max-width: 100%
