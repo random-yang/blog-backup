@@ -1,0 +1,26 @@
+# Nav
+social:
+    Github: https://github.com/OfficialYoungX
+    Codepen: https://codepen.io/De-Coder
+    Dribbble: https://dribbble.com/De_Coder
+    twitter: https://twitter.com/JHWviuDZH8bcvuM
+    # 微博: https://weibo.com/u/3229623314
+    知乎: https://www.zhihu.com/people/YCM-L-RR
+    掘金: https://juejin.im/user/5a26acea51882531926e9502
+    
+
+# Background image, color
+background: '#f3f3f3'
+
+# Favicon
+# favicon: https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico
+
+# SEO
+keywords: 'randomyang, design, code'
+
+# Widgets, enable at least one
+widgets:
+    archive: enabled
+    tag: enabled
+# Set the first image in post to cover
+# auto_cover: true
