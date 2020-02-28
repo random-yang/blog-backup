@@ -12,7 +12,7 @@ date: 2018-11-09 14:32:14
 ### 预览
 ![1.0](pygmies/1.0.png)
 ### 在线demo
-[Dome在这](https://codepen.io/De-Coder/pen/xQVBwG)
+[Dome在这](https://codepen.io/randomyang/pen/xQVBwG)
 由于兼容性的问题还没解决，建议**Chrome**打开
 ### 灵感来源
 某天在观看TED演讲[High-tech art (with a sense of humor)](https://www.ted.com/talks/aparna_rao_high_tech_art_with_a_sense_of_humor/discussion#t-13221)的时候看到里面的一个项目叫做**pygmies**，中文名叫**俾格米人**（图中的小黑人）。他们都很胆小，只要有声音就会被吓到躲到板子后面。

@@ -12,17 +12,17 @@ tags:
 #### filter
 应用场景：filter CSS属性将模糊或颜色偏移等图形效果应用于元素。滤镜通常用于调整图像，背景和边框的渲染。
 作用对象：作用于使用该属性的**元素本身**
-具体应用实例：[DEMO](https://codepen.io/De-Coder/pen/ajvdvG)
+具体应用实例：[DEMO](https://codepen.io/randomyang/pen/ajvdvG)
 
 #### mix-blend-mode
-应用场景：mix-blend-mode CSS 属性描述了元素的内容应该与元素的直系父元素的内容和元素的背景如何混合。
-作用对象：作用于使用该属性的**元素本身**以及**直系父元素**
-具体应用实例：[DEMO](https://codepen.io/De-Coder/pen/RJrwJo)
+应用场景：mix-blend-mode CSS 属性描述了元素本身应该与元素的背景(元素后面的任何内容)如何混合。
+作用对象：作用于使用该属性的**元素本身**
+具体应用实例：[DEMO](https://codepen.io/randomyang/pen/RJrwJo)
 
 #### background-blend-mode
-应用场景：background-blend-mode CSS属性定义该元素的背景图片，以及背景色如何混合。通常结合`background-image`属性使用。
+应用场景：background-blend-mode CSS属性定义该元素的背景(背景图片、背景色等等)之间如何混合。通常结合`background-image`属性使用。
 作用对象：作用于使用该属性的元素的**背景**
-具体应用实例：[DEMO](https://codepen.io/De-Coder/pen/pLmZjM)
+具体应用实例：[DEMO](https://codepen.io/randomyang/pen/pLmZjM)
 
 #### 三者的相同点
 
@@ -43,7 +43,7 @@ tags:
 可以类比为你带着各种各样“有色眼镜”，在这种情况下再去观看被添加`filter`属性的元素。
 **`mix-blend-mode`**：
 可以理解为，在一个像素上同时显示来自两个元素的像素，那么该怎么显示呢？显示什么颜色呢？这就要取决于你的**混合模式**了。
-而这两个元素则分别是被设置了`mix-blend-mode`属性的元素 以及 其直系父元素。
+而这两个元素则分别是被设置了`mix-blend-mode`属性的元素及位于其之后的元素。
 **`background-blend-mode`**：可以理解为，其他地方和`mix-blend-mode`类似，但是混合的对象不是来自不同的元素，而是来自同一个元素的不同背景层。设置该属性，**不会**影响元素背景之上的元素。
 
 #### 参考

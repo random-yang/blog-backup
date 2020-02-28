@@ -31,7 +31,7 @@ tags:
 
 ### 在线演示Demo
 
-[codepen](https://codepen.io/De-Coder/pen/RJrwJo)预览
+[codepen](https://codepen.io/randomyang/pen/RJrwJo)预览
 
 这个demo很简单，一看应该就明白。透过不同的滤镜蒙版来显示渲染下面的背景图。这里的我随便找了一张色彩比较丰富的图片。某些混合模式下面还意外的得到了更加酷炫的效果。
 

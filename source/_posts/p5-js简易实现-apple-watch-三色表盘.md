@@ -29,7 +29,7 @@ tags:
 
 ### CodePen预览
 
-[Demo预览](https://codepen.io/De-Coder/pen/QxwgGJ)
+[Demo预览](https://codepen.io/randomyang/pen/QxwgGJ)
 
 Demo很多瑕疵，欢迎fork修改、自由创作、使优秀...
 

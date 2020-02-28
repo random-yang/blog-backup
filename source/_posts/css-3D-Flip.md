@@ -86,5 +86,5 @@ tags:
 <img width="400px" src="css-3D-Flip/2.0.gif"/>
 </div>
 
-在线的demo：[codepen](https://codepen.io/De-Coder/pen/QZxZzm)
+在线的demo：[codepen](https://codepen.io/randomyang/pen/QZxZzm)
 > 其中的卡片样式来自于[这里](https://codepen.io/drehimself/pen/QNXpyp)
