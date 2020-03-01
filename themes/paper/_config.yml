@@ -42,3 +42,6 @@ categories: false
 
 # theme color
 main_color: default # forest | grass | sky | sun | sea
+
+# google Analytics
+google_analytics_id: UA-151544816-1
