@@ -4,6 +4,8 @@ date: 2019-12-01 16:48:48
 tags:
 - design
 - blog主题
+photos:
+- https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.png
 ---
 
 ![](http://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
