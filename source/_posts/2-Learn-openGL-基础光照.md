@@ -1,5 +1,5 @@
 ---
-title: (2)LEARNING OPENGL--基础光照
+title: (2)Learning openGL--基础光照
 date: 2018-10-19 16:45:09
 tags: 
 - 计算机图形学
