@@ -1,6 +1,9 @@
 ---
 title: '[译]使用Three.js制作有粘稠感的图像悬停效果'
 date: 2019-11-02 22:40:02
+photos:
+- https://source-hosting.oss-cn-shanghai.aliyuncs.com/ThumbnailGooeyHoverEffect.jpg
+top: true
 tags:
 - glsl
 - webGL
@@ -13,7 +16,7 @@ tags:
 
 **学习如何使用噪声在着色器中创建粘稠的悬停效果。**
 
-![ThumbnailGooeyHoverEffect](./ThumbnailGooeyHoverEffect.jpg)
+![ThumbnailGooeyHoverEffect](https://source-hosting.oss-cn-shanghai.aliyuncs.com/ThumbnailGooeyHoverEffect.jpg)
 
 [查看在线演示](https://tympanus.net/Tutorials/GooeyImageHoverEffects/)or[下载源码](https://github.com/Aqro/gooey-hover-codrops)
 
@@ -244,7 +247,7 @@ export default class Figure {
 
 现在，我们已经使用网格构建了场景，我们想要获取鼠标坐标，并且为了使事情变得简单，我们将其**归一化**。为什么要归一化？看看着色器的坐标系统你就明白了。
 
-![coordinate-system](./coordinate-system.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/coordinate-system.jpg)
 
 如上图所示，我们已经将两个着色器的值标准化了。为简单起见，我们将转化鼠标坐标以匹配顶点着色器坐标。
 
@@ -315,24 +318,24 @@ update() {
 
 多亏了噪声，我们才能生成许多不同的形状，例如地图，随机图案等。
 
-![noise-example1-e1570735927299](noise-example1-e1570735927299.jpg)
-![noise-example2-e1570735958909](noise-example2-e1570735958909.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-example1-e1570735927299.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-example2-e1570735958909.jpg)
 
 让我们从2D噪声开始。仅通过传递纹理的坐标，我们就可以得到类似云的纹理。
 
-![noise-result1](noise-result1.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result1.jpg)
 
 但事实上有好几种噪声函数。我们使用3D噪声，再给一个参数，例如…时间？噪声图形将随着时间的流逝而变化。通过更改频率和幅度，我们可以进行一些变化并增加对比度。
 
-![noise-result2](noise-result2.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result2.jpg)
 
 其次，我们将创建一个圆。在片段着色器中构建像圆形这样的简单形状非常容易。我们只是采用了《 The Shader of Shaders：Shapes》中的功能来创建一个模糊的圆，增加对比度和视觉效果！
 
-![noise-result3](noise-result3.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result3.jpg)
 
 最后，我们将这两个加在一起，使用一些变量，让它对纹理进行“切片”：
 
-![noise-result4-e1570736096227](noise-result4-e1570736096227.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result4-e1570736096227.jpg)
 
 这个混合之后的结果是不是很让人兴奋，让我们深入到代码层面继续探究！
 
@@ -422,7 +425,7 @@ void main() {
 
 
 
-![noise-result5](noise-result5.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result5.jpg)
 
 通过更改噪声的幅度和频率（比如于sin / cos函数），我们可以更改渲染。
 
@@ -435,7 +438,7 @@ float offy = v_uv.y - u_time * 0.1 - cos(u_time * .001) * .01;
 float n = snoise2(vec2(offx, offy) * 5.) * 1.;
 ```
 
-![noise-result6](noise-result6.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result6.jpg)
 
 但这并时间的函数！它失真了，我们想要出色的效果。因此，我们将改为使用noise3d并传递第三个参数：时间。
 
@@ -447,25 +450,25 @@ float n = snoise3(vec3(offx, offy, u_time * .1) * 4.) * .5;
 
 只要将它们叠加在一起，我们就可以看到随时间变化的有趣的形状。
 
-![noise-result7](noise-result7.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result7.jpg)
 
 为了解释其背后的原理，让我们假设噪声就像是在-1和1之间浮动的值。但是我们的屏幕无法显示负值或大于1（纯白色）的像素，因此我们只能看到0到1之间的值。
 
-![explanation-noise1](explanation-noise1.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/explanation-noise1.jpg)
 
 我们的圆形则像这样：
 
-![explanation-noise2](explanation-noise2.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/explanation-noise2.jpg)
 
 相加之后的近似结果：
 
-![explanation-noise3](explanation-noise3.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/explanation-noise3.jpg)
 
 我们非常白的像素是可见光谱之外的像素。
 
 如果我们减小噪声并减去少量噪声，它将逐渐沿波浪向下移动，直到其消失在可见颜色的范围之内。
 
-![noise-result8](noise-result8.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result8.jpg)
 
 ```glsl
 float n = snoise(vec3(offx, offy, u_time * .1) * 4.) - 1.;
@@ -477,7 +480,7 @@ float n = snoise(vec3(offx, offy, u_time * .1) * 4.) - 1.;
 float c = circle(circlePos, 0.3, 0.3) * 2.5;
 ```
 
-![noise-result9](noise-result9.jpg)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/noise-result9.jpg)
 
 我们就实现我们最想要的效果了！但是正如你看到的，仍然缺少一些细节。而且我们的边缘一点也不锐利。
 
