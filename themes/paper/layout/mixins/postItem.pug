@@ -1,6 +1,8 @@
 mixin postItem(post)
   if(post)
     .posts-item
+      if(post.top)
+        span.posts-item__pintop 置顶
       - let hasPhoto = theme.posts_item_image && post.photos && post.photos[0]
       h2(class=hasPhoto ? "h2--sm-mb" : "")
         a(href=post.path ? url_for(post.path) : '') #{post.title}

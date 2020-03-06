@@ -87,7 +87,7 @@ theme: paper
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: git@github.com:OfficialYoungX/officialyoungx.github.io.git
+    repo: git@github.com:random-yang/random-yang.github.io.git
     branch: master
 
 # Blog backup
@@ -96,7 +96,7 @@ backup:
     message: update backup
     theme: autumn
     repository:
-        github: git@github.com:OfficialYoungX/blog-backup.git,master
+        github: git@github.com:random-yang/blog-backup.git,master
 
 # hot reload
 browsersync:

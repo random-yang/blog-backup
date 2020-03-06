@@ -4,6 +4,7 @@
 .posts-item
   padding: 2.4rem 0
   border-bottom: 1px solid lighten($color-gray, 70%)
+  position: relative
   h2
     text-size(l-1)
     margin-bottom: 6rem
@@ -30,6 +31,16 @@
     text-size(s-1)
     margin: 2rem 0 0 0
     color: $color-black-3
+
+  &__pintop
+    font-size: 1rem
+    font-weight: bold
+    border: 1px solid $color-black-2
+    // background: $color-main
+    padding: 0.3em 0.6em
+    position: absolute
+    top: 1em
+    right: -1em
 
 .post__tags, .post__date
   position: relative
