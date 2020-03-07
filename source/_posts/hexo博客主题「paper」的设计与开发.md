@@ -6,7 +6,7 @@ tags:
 - design
 - blog主题
 photos:
-- https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.png
+- https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.jpg
 ---
 
 ![](http://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
@@ -26,7 +26,7 @@ A：paper-like，随便翻译一下可以翻译为“类纸化”风格。主要
 
 Q：具体参考了哪个报纸的排版设计？
 A：我当时其实就是随便google了一张报纸，然后就开始设计了。链接我也给忘了，后面补上，长这样。
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.png)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.jpg)
 其实现在想起来，我当时应该多参考几个，不过已经有点晚了，这一点比较后悔。
 
 Q：使用什么设计工具？
