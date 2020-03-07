@@ -108,4 +108,4 @@ feed:
   path: atom.xml
   limit: 10
   
-# favicon: http://source-hosting.oss-cn-shanghai.aliyuncs.com/randomyang-favicon.ico
+favicon: http://source-hosting.oss-cn-shanghai.aliyuncs.com/randomyang-favicon.ico
