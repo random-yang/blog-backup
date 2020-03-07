@@ -28,7 +28,7 @@ html(lang=config.language)
       }
     meta(name="theme-color" content=colorMap[theme.main_color])
     title=getPageTitle()
-    link(rel="shortcut icon" href="/favicon.ico")
+    link(rel="shortcut icon" href= config.favicon || "/favicon.ico")
     //- stylesheets list from _config.yml
     if theme.stylesheets && theme.stylesheets.length > 0
       each url in theme.stylesheets

@@ -1,7 +1,7 @@
 # Site
 title: RandomYang
 subtitle: Code + Design => Magic
-description: Code + Design => Magic 
+description: Code + Design => Magic
 keywords: programmer,code,frontend,design
 author: RandomYang
 language: zh-CN
@@ -48,9 +48,9 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-    path: ''
-    per_page: 10
-    order_by: -date
+  path: ''
+  per_page: 10
+  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -63,7 +63,6 @@ tag_map:
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -82,30 +81,31 @@ archive_generator:
 # theme: autumn
 theme: paper
 
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-    type: git
-    repo: git@github.com:random-yang/random-yang.github.io.git
-    branch: master
+  type: git
+  repo: git@github.com:random-yang/random-yang.github.io.git
+  branch: master
 
 # Blog backup
 backup:
-    type: git
-    message: update backup
-    theme: autumn
-    repository:
-        github: git@github.com:random-yang/blog-backup.git,master
+  type: git
+  message: update backup
+  theme: autumn
+  repository:
+    github: git@github.com:random-yang/blog-backup.git,master
 
 # hot reload
 browsersync:
-  logLevel: "warn"
+  logLevel: 'warn'
   ghostMode:
     scroll: true
-  instanceName: "uniqueString"
+  instanceName: 'uniqueString'
 
 feed:
   type: atom
   path: atom.xml
   limit: 10
+  
+# favicon: http://source-hosting.oss-cn-shanghai.aliyuncs.com/randomyang-favicon.ico
