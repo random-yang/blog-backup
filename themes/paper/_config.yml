@@ -31,6 +31,7 @@ social:
   Dribbble: https://dribbble.com/randomyang
   Twitter: https://twitter.com/JHWviuDZH8bcvuM
   Mail: mailto:decoderyang@gmail.com
+  Rss: /atom.xml
 # and more, you can add other link by the same way
 
 # Uncomment to disable sidebar
@@ -45,6 +46,3 @@ main_color: default # forest | grass | sky | sun | sea
 
 # google Analytics
 google_analytics_id: UA-151544816-1
-
-# rss
-rss: /atom.xml
