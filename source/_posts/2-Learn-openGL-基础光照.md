@@ -4,7 +4,7 @@ date: 2018-10-19 16:45:09
 tags: 
 - 计算机图形学
 - openGL
-- graphic
+- Graphic
 ---
 
 **Content**

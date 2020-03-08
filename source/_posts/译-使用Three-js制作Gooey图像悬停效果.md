@@ -6,7 +6,7 @@ photos:
 top: true
 tags:
 - glsl
-- webGL
+- WebGL
 - Graphic
 ---
 
@@ -20,7 +20,7 @@ tags:
 
 [查看在线演示](https://tympanus.net/Tutorials/GooeyImageHoverEffects/)or[下载源码](https://github.com/Aqro/gooey-hover-codrops)
 
-作为Flash的替代者webGL在近几年随着像Three.js, PIXI.js, OGL.js这样的库而变得越来越火。它们对于创建*空白板*非常有用，唯一的限制只有你的想象力。我们看到越来越多的WebGL创建的效果微妙地集成到交互界面中，以进行悬停，滚动或显示效果。比如 [Hello Monday](https://www.hellomonday.com/) 或者是 [cobosrl.co](https://www.cobosrl.co/).
+作为Flash的替代者WebGL在近几年随着像Three.js, PIXI.js, OGL.js这样的库而变得越来越火。它们对于创建*空白板*非常有用，唯一的限制只有你的想象力。我们看到越来越多的WebGL创建的效果微妙地集成到交互界面中，以进行悬停，滚动或显示效果。比如 [Hello Monday](https://www.hellomonday.com/) 或者是 [cobosrl.co](https://www.cobosrl.co/).
 
 在本教程中，我们将使用Three.js创建特殊的粘稠纹理，将其用于在悬停时显示另一幅图像。你现在就可以点击演示链接，去看看真实的效果！对于演示本身，我创建了一个更实际的示例，该示例显示了带有图像的水平可滚动布局，其中每个图像都有不同的效果。你可以单击图像，它将变换为更大的版本，同时显示一些其他内容（Mock出的内容）。我们将会带你了解这个效果最有趣的部分，这样你就可以知道它是如何工作的，并且可以自己创建更多的效果！
 
