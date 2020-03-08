@@ -119,6 +119,6 @@ gl_FragColor = texture2D(originalImage, uv + mouse*depth.r);
 
 该文涉及到的 shader 代码并不复杂，可是思路非常巧妙，进而达到了不错的效果。而且最重要的是，只要你能制作出图像对应的深度图，那么就可以模拟出伪 3D 的效果。如果你能够将图中对象的前后关系颗粒度划分得越细，那么最终得到的效果应该是会越好。
 
-文章同收录于知乎专栏[前端艺术](https://zhuanlan.zhihu.com/c_1109036567154388992)，如果你对于相关内容感兴趣，欢迎关注订阅。
+文章首发于个人[blog](http://randomyang.top/2020/03/08/译-使用WebGL创建伪3D图像效果/)，同收录于知乎专栏[前端艺术](https://zhuanlan.zhihu.com/c_1109036567154388992)，如果你对于相关内容感兴趣，欢迎关注订阅。
 
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/article-tail@3x.png)
