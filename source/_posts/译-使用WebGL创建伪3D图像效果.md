@@ -17,7 +17,7 @@ photos:
 
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Fake3dEffect_featured.jpg)
 
-> demo: http://tympanus.net/Tutorials/Fake3DEffect/[译者注：强烈建议你点进去看看！]
+> demo: http://tympanus.net/Tutorials/Fake3DEffect/ [译者注：强烈建议你点进去看看！]
 > Get 源代码: http://tympanus.net/Tutorials/Fake3DEffect/Fake3DEffect.zip
 
 如今，WebGL 变得非常流行，因为它让我们能够为 Web 创建独特的交互式图形。您可能已经看到使用[Blotter.js 创建文字失真效果](https://tympanus.net/codrops/2019/02/06/text-distortion-effects-using-blotter-js/)或使用[THREE.MeshLine 库创建的 WebGL 动画曲线](https://tympanus.net/codrops/2019/01/08/animated-mesh-lines/)。今天，您将了解如何直接使用原生 WebGL 快速为图像创建交互式的伪 3D 效果。
