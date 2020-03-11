@@ -297,9 +297,3 @@ void main()
 
 ### 参考资源
 [learning openGL中文教程](https://learnopengl-cn.github.io/01%20Getting%20started/09%20Camera/)该教程翻译自[原英文教程](https://learnopengl.com)，整个教程讲解得详细而且专业，不但告诉你如何用代码实现，而且还会从原理剖析。原理讲解不僵硬，生动详细。稍微耐心的阅读教程的讲解，就能理解其中的每一个细节原理。让你知其然并且知其所以然，是一篇很好的教程。
-
-```javascript
-var a = 100;
-function A() {};
-try{}
-```
