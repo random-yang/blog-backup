@@ -55,5 +55,34 @@ html(lang=config.language)
     include ./darkmode-mask
     .sidebar__button
 
+    if page.content
+      script.
+        window.addEventListener('DOMContentLoaded', () => {
+          new Valine({
+            el: '#comments',
+            appId: '1JY5EfOoNSaiEGcXhwrCs7dk-gzGzoHsz',
+            appKey: 'jXutXUNavOPDp92k9gQuMsv9',
+            notify:false,
+            verify:false,
+            avatar:'mp',
+            placeholder: '说几句',
+            visitor: true
+          })
+
+          tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.toc__content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.article__content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3, h4, h5, h6',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+            orderedList: false,
+            collapseDepth: 2,
+          });
+        })
+
+
 
 
