@@ -44,7 +44,7 @@ A：这样：
 
 **字体**
 字体又是一个大坑，我看上的好的字体都要收费。无奈之下只能暂时选择中规中矩的通用方案`font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif`
-行高上我还是下了一定的功夫，因为行高对于阅读体验的影响比较大。参考了这位[大佬](https://canisminor.cc/blog/posts/20180820_canisminor)(真大佬，是谁我也不清楚，反正大佬)博客上的行高算法，感觉最有道理，最能说服我。
+行高上我还是下了一定的功夫，因为行高对于阅读体验的影响比较大。参考了这位[大佬](https://canisminor.cc/blog/posts/20180820_canisminor)博客上的行高算法，感觉最有道理，最能说服我。
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214180635.png)
 按照上图的计算，最后将字号和行高设定为stylu中的变量
 ```styl
