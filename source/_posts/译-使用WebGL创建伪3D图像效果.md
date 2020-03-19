@@ -8,7 +8,7 @@ tags:
   - Graphic
   - glsl
 photos:
-  - https://source-hosting.oss-cn-shanghai.aliyuncs.com/Fake3dEffect_featured.jpg
+  - https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_03.gif
 ---
 
 > 原文：https://tympanus.net/codrops/2019/02/20/how-to-create-a-fake-3d-image-effect-with-webgl/
