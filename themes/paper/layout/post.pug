@@ -2,7 +2,6 @@ extends ./includes/layout.pug
 include ./mixins/postItem.pug
 include ./mixins/horizontalLine.pug
 
-
 block content
   .main
     include ./includes/location-bar.pug
@@ -18,6 +17,7 @@ block content
     +horizontalLine('1px')
     .main__bottom
       include includes/pre-next.pug
-      #comments
+      if page.content && theme.comment && theme.comment.enable
+        #comments
 
 
