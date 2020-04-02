@@ -119,6 +119,23 @@ gl_FragColor = texture2D(originalImage, uv + mouse*depth.r);
 
 该文涉及到的 shader 代码并不复杂，可是思路非常巧妙，进而达到了不错的效果。而且最重要的是，只要你能制作出图像对应的深度图，那么就可以模拟出伪 3D 的效果。如果你能够将图中对象的前后关系颗粒度划分得越细，那么最终得到的效果应该是会越好。
 
+---
+<small>2020.04.02更新<small>
+
+关于“深度图(depth map)”，最近发现除了人手动用photoshop处理以外，还可以借助训练好的(当然也可以自己训练)神经网络模型的力量来帮助你自动的从原图得到“深度图”。
+
+比如我找到了以下的仓库：
+* [https://github.com/nianticlabs/monodepth2](https://github.com/nianticlabs/monodepth2)
+* [https://github.com/gautam678/Pix2Depth](https://github.com/gautam678/Pix2Depth)
+
+在线生成“深度图”：
+* [https://3dphoto.io/uploader/](https://3dphoto.io/uploader/)(效果一般，有些图片好，有些不好)
+
+在线可交互深度图制作和预览：
+* [http://depthy.me/#/sample/flowers](http://depthy.me/#/sample/flowers)(可以调节各种参数，其实就是本文提到的技术的一个比较完整的延伸)
+
+---
+
 文章首发于个人[blog](http://randomyang.top/2020/03/08/译-使用WebGL创建伪3D图像效果/)，同收录于知乎专栏[前端艺术](https://zhuanlan.zhihu.com/c_1109036567154388992)，如果你对于相关内容感兴趣，欢迎关注订阅。
 
 ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/article-tail@3x.png)
