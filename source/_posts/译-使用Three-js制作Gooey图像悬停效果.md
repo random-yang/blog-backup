@@ -3,7 +3,6 @@ title: '[译]使用Three.js制作有粘稠感的图像悬停效果'
 date: 2019-11-02 22:40:02
 photos:
 - https://source-hosting.oss-cn-shanghai.aliyuncs.com/ThumbnailGooeyHoverEffect.jpg
-top: true
 tags:
 - glsl
 - WebGL
