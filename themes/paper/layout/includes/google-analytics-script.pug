@@ -5,7 +5,7 @@ if theme.google_analytics_id
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '#{theme.google_analytics_id}');
+    gtag('config', '#{theme.google_analytics_id}', { 'site_speed_sample_rate': 100 });
 
 
 
