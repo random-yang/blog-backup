@@ -9,7 +9,7 @@ photos:
 - https://source-hosting.oss-cn-shanghai.aliyuncs.com/20191214174027.jpg
 ---
 
-![](http://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
+![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
 
 > *虽然麻烦，但是我还是写了个自己的博客主题叫[Paper](https://github.com/OfficialYoungX/paper)*
 
