@@ -4,6 +4,20 @@
 
 ![landing](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Paper-showcase.png)
 
+## 目录
+
+- [如何使用](#如何使用)
+  - [安装](#安装)
+  - [配置项](#配置项)
+- [效果预览](#效果预览)
+- [update](#update)
+- [移植版](#移植版)
+- [Todo](#todo)
+- [参与](#参与)
+- [LICENCE](#licence)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ## 如何使用
 
 #### 安装
@@ -56,7 +70,8 @@ social:
   twitter: https://twitter.com/yours
   知乎: https://www.zhihu.com/people/yours
   掘金: https://juejin.im/user/yours
-  Mail: tomail:xxx@yourmail.xxxx
+  Mail: mailto:xxx@yourmail.xxxx
+  Rss: your-rss-link-url
   # ...
   # and more, you can add other link by the same way
 ```
@@ -107,9 +122,33 @@ google_analytics_id: xx-xxxxxxx-xx
 
 - 文章置顶
 
-在文章markdown头部写：
+在文章 markdown 头部写：
+
 ```bash
 top: true
+```
+
+- 添加 Rss 订阅
+
+根据[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)的引导，生成`atom.xml`文件，然后在`themes/paper/_config.yml`中配置
+
+```bash
+social:
+  - Rss: your-rss-link-url
+```
+
+- 评论模块配置
+
+```bash
+# commend module
+comment:
+  enable: false # true to enable
+  appId: your-app-id
+  appKey: your-app-key
+  placeholder: say something
+  notify: false
+  verify: false
+  avatar: mp
 ```
 
 ## 效果预览
@@ -145,9 +184,10 @@ git pull
 - [x] 优化[Audit](https://web.dev/measure/)测试性能
 - [x] home 页面的 posts 图片(参数可配置)
 - [x] 文章置顶(最近才意识到置顶功能是十分重要的)
+- [x] RSS 订阅功能
+- [ ] 图片 zooming
 - [ ] ~~根据情况看决定否添加评论系统(评论系统适合于使用者自行决定使用第三方评论插件)~~
 - [ ] 全局搜索
-- [ ] RSS 订阅功能
 - [ ] 优化排版和细分字体
 
 ## 参与
