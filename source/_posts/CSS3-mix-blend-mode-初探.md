@@ -18,15 +18,15 @@ tags:
 
 * OVERLAY
 
-![image_1](./CSS3-mix-blend-mode-初探/2-1.jpg)
+![image_1](https://source-hosting.oss-cn-shanghai.aliyuncs.com/CSS3-mix-blend-mode-%E5%88%9D%E6%8E%A2-1.jpg)
 
 * SOFT-LIGHT
 
-![image_2](./CSS3-mix-blend-mode-初探/2-2.jpg)
+![image_2](https://source-hosting.oss-cn-shanghai.aliyuncs.com/CSS3-mix-blend-mode-%E5%88%9D%E6%8E%A2-2.jpg)
 
 * HUE
 
-![image_3](./CSS3-mix-blend-mode-初探/2-3.jpg)
+![image_3](https://source-hosting.oss-cn-shanghai.aliyuncs.com/CSS3-mix-blend-mode-%E5%88%9D%E6%8E%A2-3.jpg)
 
 
 ### 在线演示Demo

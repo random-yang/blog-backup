@@ -8,9 +8,11 @@ tags:
   - css
   - interesting
 date: 2018-11-09 14:32:14
+photos:
+- https://source-hosting.oss-cn-shanghai.aliyuncs.com/pygmies-1.png
 ---
 ### 预览
-![1.0](pygmies/1.0.png)
+![1.0](https://source-hosting.oss-cn-shanghai.aliyuncs.com/pygmies-1.png)
 ### 在线demo
 [Dome在这](https://codepen.io/randomyang/pen/xQVBwG)
 由于兼容性的问题还没解决，建议**Chrome**打开
@@ -22,7 +24,7 @@ date: 2018-11-09 14:32:14
 ### 准备svg素材
 作图工具,Mac平台**sketch**
 
-![2.0](pygmies/2.0.png)
+![2.0](https://source-hosting.oss-cn-shanghai.aliyuncs.com/pygmies-2.png)
 ### 主要代码
 
 html部分

@@ -33,7 +33,7 @@ tags:
 >
 > dpr = 屏幕横向设备像素 / 理想视口的宽
 
-![1.0](Pixels并不简单/1.png)
+![1.0](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Pixels%E5%B9%B6%E4%B8%8D%E7%AE%80%E5%8D%95-1.png)
 
 #### 参考像素
 
@@ -43,7 +43,7 @@ tags:
 
 (1/96)in / (28in \* 2 \* PI / 360deg) = 0.0213度
 
-![2.0](Pixels并不简单/2.png)
+![2.0](https://source-hosting.oss-cn-shanghai.aliyuncs.com/Pixels%E5%B9%B6%E4%B8%8D%E7%AE%80%E5%8D%95-2.png)
 <small>图片来源：https://github.com/jawil/blog/issues/21</small>
 
 #### PPI(pixels per inch)

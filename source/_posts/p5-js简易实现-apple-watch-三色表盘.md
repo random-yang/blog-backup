@@ -5,13 +5,15 @@ tags:
 - p5.js
 - animation 
 - Javascript
+photos:
+- https://source-hosting.oss-cn-shanghai.aliyuncs.com/p5-js%E7%AE%80%E6%98%93%E5%AE%9E%E7%8E%B0-apple-watch-%E4%B8%89%E8%89%B2%E8%A1%A8%E7%9B%98-2.jpg
 ---
 
 **Content**
 [TOC]
 
  ### apple watch原图欣赏
-![apple原图](./p5-js简易实现-apple-watch-三色表盘/3-1.jpg)
+![apple原图](https://source-hosting.oss-cn-shanghai.aliyuncs.com/p5-js%E7%AE%80%E6%98%93%E5%AE%9E%E7%8E%B0-apple-watch-%E4%B8%89%E8%89%B2%E8%A1%A8%E7%9B%98-1.jpg)
 
 莫名其妙的好看有不！
 
@@ -19,7 +21,7 @@ tags:
 
 图片预览一下：
 
-![demo截图](./p5-js简易实现-apple-watch-三色表盘/3-2.jpg)
+![demo截图](https://source-hosting.oss-cn-shanghai.aliyuncs.com/p5-js%E7%AE%80%E6%98%93%E5%AE%9E%E7%8E%B0-apple-watch-%E4%B8%89%E8%89%B2%E8%A1%A8%E7%9B%98-2.jpg)
 
 ### p5.js
 
