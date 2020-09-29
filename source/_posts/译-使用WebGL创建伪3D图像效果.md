@@ -1,7 +1,6 @@
 ---
 title: '[译]使用WebGL创建伪3D图像效果'
 date: 2020-03-08 13:18:32
-top: true
 tags:
   - WebGL
   - 3D

@@ -109,3 +109,9 @@ feed:
   limit: 10
   
 favicon: https://source-hosting.oss-cn-shanghai.aliyuncs.com/randomyang-favicon.png
+
+math:
+  engine: 'mathjax'
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
