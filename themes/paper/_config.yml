@@ -13,7 +13,6 @@ stylesheets:
 
 stylesheets_preload:
 - https://cdn.bootcss.com/highlight.js/9.6.0/styles/github.min.css # for highlight
-- https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap # for font
 - https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,700&display=swap # for font
 
 # scripts loaded in the end of the body
