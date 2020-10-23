@@ -51,13 +51,19 @@ tags:
 Figma的性能出乎意料的好。下面是随手做的缩放测试，测试素材来自[Material Design 2.0 Theming kit](https://www.figma.com/resources/assets/material-design-themeing-ui-kit/)的Figma版本。(需要说明的是，由于录屏和转换gif的原因，实际的效果要比你看到的gif流畅得多)
 
 components页面的32个画板，每一个画板上面都是有很多元素的：
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-1.gif)
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-1.mp4" type="video/mp4">
+</video>
 
 全选32个画板，复制得到64画板：
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-2.gif)
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-2.mp4" type="video/mp4">
+</video>
 
 居然还不卡，然后全选64个画板复制得到128个画板：
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-3.gif)
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/design-web-in-the-web-suofangyanshi-3.mp4" type="video/mp4">
+</video>
 
 可以看到缩放仍然流畅。虽然仅仅测试缩放并不能完全体现性能的方方面面，但是足以说明问题。
 

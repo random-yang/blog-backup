@@ -45,7 +45,9 @@ gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW)
 为了创建 3D 效果，我们需要创建图像的深度图。制作深度图的主要原理是，我们必须根据图像中对象的 Z 坐标来分离图像由近到远的不同部分，从而将前景与背景分隔开。
 
 为此，我们可以通过以下方式在 Photoshop 中打开图像并在原始照片上绘制灰色区域：
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_01.gif)
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_01.mp4" type="video/mp4">
+</video>
 [译者注：其实这里的图片处理非常重要，将会直接影响到最后的效果。这里，我找到了一个[如何在 photoshop 中创建图像的深度图](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjXkpWAroroAhVLL6YKHftmBMkQwqsBMAB6BAgKEAQ&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLQ0RuWf-J1k&usg=AOvVaw2aUR2TWSNuh9NvqC3xLrML)的简易教程]
 
 此图显示了一些山脉，在这些山脉中您可以看到图中对象离相机越近，深度图中的区域绘制得越亮。在接下来的一部分中，让我们看看为什么这种阴影很有意义。
@@ -86,7 +88,11 @@ gl_FragColor = texture2D(originalImage, uv + mouse); // 译者注：这里每一
 ```
 
 [译者注：[关于 uv](http://wiki.winamp.com/wiki/Pixel_Shader_Basics#UV_Coordinates)]
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_002.gif)
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_002.gif) -->
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_02.mp4" type="video/mp4">
+</video>
+
 
 现在让我们添加深度信息：
 
@@ -96,7 +102,10 @@ gl_FragColor = texture2D(originalImage, uv + mouse*depth.r);
 ```
 
 该见证奇迹了：
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_03.gif)
+<!-- ![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_03.gif) -->
+<video style="width: 100%" width="320" loop="true" autoplay muted>
+  <source src="https://source-hosting.oss-cn-shanghai.aliyuncs.com/fake3d_03.mp4" type="video/mp4">
+</video>
 
 因为 depth 纹理是黑白的，所以我们可以采用红色通道`depth.r`，并将其乘以屏幕上的鼠标位置值。这意味着像素越亮，跟随鼠标移动的像素就越多。另一方面，暗色像素只会保留在原位。它的原理是如此简单[译者注：真的简单易懂！]，但是却可以产生令人印象深刻的 3D 图像错觉。
 
