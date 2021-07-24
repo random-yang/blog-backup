@@ -541,6 +541,3 @@ float finalMask = smoothstep(0.4, 0.5, n + pow(c, 2.));
 - [glslify](https://github.com/glslify/glslify)
 - [glsl-noise](https://www.npmjs.com/package/glsl-noise)
 
-
-![tail](https://source-hosting.oss-cn-shanghai.aliyuncs.com/article-tail@3x.png)
-
