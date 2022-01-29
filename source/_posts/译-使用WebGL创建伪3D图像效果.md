@@ -145,5 +145,3 @@ gl_FragColor = texture2D(originalImage, uv + mouse*depth.r);
 ---
 
 文章首发于个人[blog](http://randomyang.top/2020/03/08/译-使用WebGL创建伪3D图像效果/)，同收录于知乎专栏[前端艺术](https://zhuanlan.zhihu.com/c_1109036567154388992)，如果你对于相关内容感兴趣，欢迎关注订阅。
-
-![](https://source-hosting.oss-cn-shanghai.aliyuncs.com/article-tail@3x.png)
