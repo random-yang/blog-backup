@@ -28,9 +28,9 @@ export default function Header() {
       <div className="container py-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-8">
-            <Link href="/" className="text-3xl font-bold text-text-primary no-underline hover:text-primary transition-colors">
+            {/* <Link href="/" className="text-3xl font-bold text-text-primary no-underline hover:text-primary transition-colors">
               RandomYang
-            </Link>
+            </Link> */}
             
             <nav className="hidden md:flex items-center gap-6">
               {menuItems.map((item) => (

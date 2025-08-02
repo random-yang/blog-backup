@@ -15,7 +15,7 @@ export default function PostCard({ post, compact = false }: PostCardProps) {
     <article
       className={cn(
         "group relative",
-        post.top && !compact && "paper-curl",
+        // post.top && !compact && "paper-curl",
         !compact && "p-8 bg-white hover:bg-background-auxiliary transition-colors rounded-lg"
       )}
     >
@@ -30,17 +30,17 @@ export default function PostCard({ post, compact = false }: PostCardProps) {
         className="block no-underline"
       >
         <h3 className={cn(
-          "font-bold mb-3 text-text-primary group-hover:text-primary transition-colors",
-          compact ? "text-lg" : "text-2xl"
+          "font-bold mb-3 mt-1 text-text-primary group-hover:text-primary transition-colors",
+          "text-lg"
         )}>
           {post.title}
         </h3>
         
-        {!compact && (
+        {/* {!compact && (
           <p className="text-text-secondary mb-4 line-clamp-3">
             {post.excerpt}
           </p>
-        )}
+        )} */}
         
         <div className="post-meta">
           <time className="text-text-light">

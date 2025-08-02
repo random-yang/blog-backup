@@ -15,7 +15,6 @@ export default function HomePage() {
       <HorizontalLine />
       
       <section>
-        <h2 className="text-3xl font-bold mb-8">最新文章</h2>
         <PostList posts={posts} />
       </section>
     </div>
