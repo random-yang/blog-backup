@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-size: 62.5%;
+  }
+
+  html {
+    /* scroll-behavior: smooth; */
+  }
+
+  body {
+    @apply font-serif text-base text-text-primary bg-white;
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+    line-height: 1.4;
+  }
+
+  h1 { @apply text-4xl mb-8; }
+  h2 { @apply text-3xl mb-6 mt-12; }
+  h3 { @apply text-2xl mb-4 mt-8; }
+  h4 { @apply text-xl mb-3 mt-6; }
+  h5 { @apply text-lg mb-2 mt-4; }
+  h6 { @apply text-base mb-2 mt-4; }
+
+  p {
+    @apply mb-6;
+  }
+
+  a {
+    @apply text-text-primary underline decoration-primary hover:decoration-2 transition-all;
+  }
+
+  blockquote {
+    @apply border-l-4 border-primary pl-6 my-8 italic text-text-secondary;
+  }
+
+  pre {
+    @apply bg-gray-50 rounded-lg p-4 overflow-x-auto my-6;
+  }
+
+  code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+  }
+
+  pre code {
+    @apply bg-transparent p-0;
+  }
+
+  ul, ol {
+    @apply mb-6 pl-8;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  hr {
+    @apply my-12 border-t border-gray-200;
+  }
+
+  table {
+    @apply w-full mb-6 border-collapse;
+  }
+
+  th, td {
+    @apply border border-gray-200 px-4 py-2 text-left;
+  }
+
+  th {
+    @apply bg-gray-50 font-bold;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .horizontal-line {
+    @apply relative h-px bg-gray-200 my-12;
+  }
+
+  .horizontal-line::before {
+    content: '';
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply w-4 h-4 bg-primary rounded-full;
+  }
+
+  .mask {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-40;
+  }
+
+  .post-meta {
+    @apply flex items-center gap-4 text-sm text-text-light;
+  }
+
+  .post-content {
+    @apply max-w-none;
+  }
+  
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 {
+    @apply font-bold mt-8 mb-4;
+  }
+  
+  .post-content h1 { @apply text-4xl; }
+  .post-content h2 { @apply text-3xl; }
+  .post-content h3 { @apply text-2xl; }
+  .post-content h4 { @apply text-xl; }
+  .post-content h5 { @apply text-lg; }
+  .post-content h6 { @apply text-base; }
+  
+  .post-content p {
+    @apply mb-6 leading-relaxed;
+  }
+  
+  .post-content a {
+    @apply text-primary underline hover:decoration-2;
+  }
+  
+  .post-content ul,
+  .post-content ol {
+    @apply mb-6 pl-8;
+  }
+  
+  .post-content ul {
+    @apply list-disc;
+  }
+  
+  .post-content ol {
+    @apply list-decimal;
+  }
+  
+  .post-content li {
+    @apply mb-2;
+  }
+  
+  .post-content blockquote {
+    @apply border-l-4 border-primary pl-6 my-8 italic text-text-secondary;
+  }
+  
+  .post-content pre {
+    @apply bg-gray-50 rounded-lg p-4 overflow-x-auto my-6;
+  }
+  
+  .post-content code {
+    @apply bg-gray-100 px-1 py-0.5 rounded text-sm;
+  }
+  
+  .post-content pre code {
+    @apply bg-transparent p-0;
+  }
+  
+  .post-content table {
+    @apply w-full mb-6 border-collapse;
+  }
+  
+  .post-content th,
+  .post-content td {
+    @apply border border-gray-200 px-4 py-2 text-left;
+  }
+  
+  .post-content th {
+    @apply bg-gray-50 font-bold;
+  }
+  
+  .post-content img {
+    @apply max-w-full h-auto rounded-lg my-6;
+  }
+  
+  .post-content hr {
+    @apply my-12 border-t border-gray-200;
+  }
+
+  .toc {
+    @apply sticky top-8;
+  }
+
+  .toc-item {
+    @apply block py-1 px-2 text-sm text-text-secondary hover:text-primary hover:bg-gray-50 rounded transition-all;
+  }
+
+  .toc-item.active {
+    @apply text-primary bg-gray-50;
+  }
+
+  .tag {
+    @apply inline-block px-3 py-1 text-sm bg-gray-100 hover:bg-primary hover:text-white rounded-full transition-all;
+  }
+
+  .category {
+    @apply inline-block px-4 py-2 text-sm bg-background-auxiliary hover:bg-primary hover:text-white rounded transition-all;
+  }
+
+  .paper-curl {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .paper-curl::before,
+  .paper-curl::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transform: rotate(-3deg);
+    z-index: -1;
+  }
+
+  .paper-curl::before {
+    left: 10px;
+  }
+
+  .paper-curl::after {
+    right: 10px;
+    transform: rotate(3deg);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-sun bg-clip-text text-transparent;
+  }
+}
